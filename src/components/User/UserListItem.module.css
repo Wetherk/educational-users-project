@@ -1,0 +1,9 @@
+.user-list-item {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffa726;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
