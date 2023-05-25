@@ -1,4 +1,5 @@
 import styles from "./Dialog.module.css";
+import Button from "./Button";
 
 const Dialog = ({ children, isOpen, onDialogClose, title }) => {
     const handleClose = () => {
@@ -20,18 +21,18 @@ const Dialog = ({ children, isOpen, onDialogClose, title }) => {
                     onClick={handleOverlayClick}
                 >
                     <div className={styles["dialog-content"]}>
-                        <div className={styles["dialog-header"]}>
+                        <header className={styles["dialog-header"]}>
                             <h3 className={styles["dialog-title"]}>{title}</h3>
-                        </div>
+                        </header>
                         <div className={styles["dialog-body"]}>{children}</div>
-                        <div className={styles["dialog-actions"]}>
-                            <button
+                        <footer className={styles["dialog-actions"]}>
+                            <Button
                                 className={styles["close-button"]}
                                 onClick={handleClose}
                             >
                                 Close
-                            </button>
-                        </div>
+                            </Button>
+                        </footer>
                     </div>
                 </div>
             )}

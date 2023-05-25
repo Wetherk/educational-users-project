@@ -39,15 +39,6 @@
     color: #000000;
 }
 
-.close-button {
-    padding: 8px 16px;
-    color: #000000;
-    background-color: #ffa726;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
 .close-button:hover {
     background-color: #ffbe5c;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./UserForm.module.css";
 import Card from "../UI/Card";
 import Dialog from "../UI/Dialog";
+import Button from "../UI/Button";
 
 const UserForm = ({ onAddUser }) => {
     const [username, setUsername] = useState("");
@@ -73,7 +74,7 @@ const UserForm = ({ onAddUser }) => {
                             type="number"
                         />
                     </div>
-                    <button type="submit">Add User</button>
+                    <Button type="submit">Add User</Button>
                 </form>
             </Card>
             <Dialog
